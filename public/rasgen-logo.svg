@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="38px" viewBox="0 0 180 38" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="currentColor">
+            <path d="M12.5,4 L27.5,4 C29.9853,4 32,6.01472 32,8.5 L32,29.5 C32,31.9853 29.9853,34 27.5,34 L12.5,34 C10.0147,34 8,31.9853 8,29.5 L8,8.5 C8,6.01472 10.0147,4 12.5,4 Z" opacity="0.7"></path>
+            <path d="M4.5,10 L19.5,10 C21.9853,10 24,12.0147 24,14.5 L24,35.5 C24,37.9853 21.9853,40 19.5,40 L4.5,40 C2.01472,40 0,37.9853 0,35.5 L0,14.5 C0,12.0147 2.01472,10 4.5,10 Z" opacity="0.4"></path>
+            <text font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold">
+                <tspan x="40" y="28">RASGEN</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
