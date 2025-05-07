@@ -11,10 +11,10 @@
   --secondary-hover: #e5e5e5;
   --accent-color: #ff4081;
   --accent-hover: #f50057;
-  
+
   --border-radius: 8px;
   --border-color: rgba(var(--gray-rgb), 0.1);
-  
+
   --button-primary-hover: #0060df;
   --button-secondary-hover: #f2f2f2;
 
@@ -37,7 +37,7 @@
     --primary-hover: #0070f3;
     --secondary-color: #1a1a1a;
     --secondary-hover: #2a2a2a;
-    
+
     --border-color: rgba(var(--gray-rgb), 0.15);
 
     --button-primary-hover: #0070f3;
@@ -64,7 +64,8 @@
   align-items: center;
 }
 
-.navLink, .navLinkActive {
+.navLink,
+.navLinkActive {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -364,17 +365,17 @@
     gap: 1rem;
     padding: 1rem;
   }
-  
+
   .nav {
     width: 100%;
     justify-content: space-around;
   }
-  
+
   .main {
     flex-direction: column;
     padding: 1rem;
   }
-  
+
   .sidebar {
     width: 100%;
     position: static;
@@ -384,15 +385,15 @@
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .stylesGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .footerLinks {
     flex-wrap: wrap;
     gap: 1rem;

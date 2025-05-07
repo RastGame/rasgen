@@ -17,15 +17,19 @@ export default function Examples() {
           />
         </Link>
         <nav className={styles.nav}>
-          <Link href="/docs" className={styles.navLink}>Documentation</Link>
-          <Link href="/examples" className={styles.navLinkActive}>Examples</Link>
-          <a href="https://github.com/yurbaone/badgen" target="_blank" rel="noopener noreferrer" className={styles.navLink}>
-            <Image
-              src="/github-icon.svg"
-              alt="GitHub"
-              width={20}
-              height={20}
-            />
+          <Link href="/docs" className={styles.navLink}>
+            Documentation
+          </Link>
+          <Link href="/examples" className={styles.navLinkActive}>
+            Examples
+          </Link>
+          <a
+            href="https://github.com/yurbaone/badgen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.navLink}
+          >
+            <Image src="/github-icon.svg" alt="GitHub" width={20} height={20} />
             GitHub
           </a>
         </nav>
@@ -34,7 +38,8 @@ export default function Examples() {
       <main className={styles.main}>
         <h1 className={styles.title}>Badge Examples</h1>
         <p className={styles.description}>
-          Here are some examples of badges you can create with Rasgen. Click on any example to see the code and URL.
+          Here are some examples of badges you can create with Rasgen. Click on
+          any example to see the code and URL.
         </p>
 
         <section className={styles.exampleSection}>
@@ -52,11 +57,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>Version Badge</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue</code>
+                  <code>
+                    https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![version](https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue)</code>
+                  <code>
+                    ![version](https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue)
+                  </code>
                 </div>
               </div>
             </div>
@@ -73,11 +82,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>Status Badge</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/badge?label=status&message=passing&color=brightgreen</code>
+                  <code>
+                    https://rasgen.vercel.app/api/badge?label=status&message=passing&color=brightgreen
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![status](https://rasgen.vercel.app/api/badge?label=status&message=passing&color=brightgreen)</code>
+                  <code>
+                    ![status](https://rasgen.vercel.app/api/badge?label=status&message=passing&color=brightgreen)
+                  </code>
                 </div>
               </div>
             </div>
@@ -94,11 +107,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>License Badge</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/badge?label=license&message=MIT&color=green</code>
+                  <code>
+                    https://rasgen.vercel.app/api/badge?label=license&message=MIT&color=green
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![license](https://rasgen.vercel.app/api/badge?label=license&message=MIT&color=green)</code>
+                  <code>
+                    ![license](https://rasgen.vercel.app/api/badge?label=license&message=MIT&color=green)
+                  </code>
                 </div>
               </div>
             </div>
@@ -120,11 +137,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>GitHub Stars</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=stars</code>
+                  <code>
+                    https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=stars
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![stars](https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=stars)</code>
+                  <code>
+                    ![stars](https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=stars)
+                  </code>
                 </div>
               </div>
             </div>
@@ -141,11 +162,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>GitHub Forks</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=forks</code>
+                  <code>
+                    https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=forks
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![forks](https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=forks)</code>
+                  <code>
+                    ![forks](https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=forks)
+                  </code>
                 </div>
               </div>
             </div>
@@ -162,11 +187,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>GitHub Issues</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=issues</code>
+                  <code>
+                    https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=issues
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![issues](https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=issues)</code>
+                  <code>
+                    ![issues](https://rasgen.vercel.app/api/github?repo=yurbaone/badgen&type=issues)
+                  </code>
                 </div>
               </div>
             </div>
@@ -188,11 +217,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>NPM Version</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/npm?package=react&type=version</code>
+                  <code>
+                    https://rasgen.vercel.app/api/npm?package=react&type=version
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![npm](https://rasgen.vercel.app/api/npm?package=react&type=version)</code>
+                  <code>
+                    ![npm](https://rasgen.vercel.app/api/npm?package=react&type=version)
+                  </code>
                 </div>
               </div>
             </div>
@@ -209,11 +242,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>NPM Downloads</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/npm?package=react&type=downloads</code>
+                  <code>
+                    https://rasgen.vercel.app/api/npm?package=react&type=downloads
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![downloads](https://rasgen.vercel.app/api/npm?package=react&type=downloads)</code>
+                  <code>
+                    ![downloads](https://rasgen.vercel.app/api/npm?package=react&type=downloads)
+                  </code>
                 </div>
               </div>
             </div>
@@ -230,11 +267,15 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>NPM License</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/npm?package=react&type=license</code>
+                  <code>
+                    https://rasgen.vercel.app/api/npm?package=react&type=license
+                  </code>
                 </div>
                 <div className={styles.exampleUsage}>
                   <h4>Markdown</h4>
-                  <code>![license](https://rasgen.vercel.app/api/npm?package=react&type=license)</code>
+                  <code>
+                    ![license](https://rasgen.vercel.app/api/npm?package=react&type=license)
+                  </code>
                 </div>
               </div>
             </div>
@@ -256,7 +297,9 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>Flat Style (Default)</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/badge?label=style&message=flat&color=blue&style=flat</code>
+                  <code>
+                    https://rasgen.vercel.app/api/badge?label=style&message=flat&color=blue&style=flat
+                  </code>
                 </div>
               </div>
             </div>
@@ -273,7 +316,9 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>Flat Square Style</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/badge?label=style&message=flat-square&color=blue&style=flat-square</code>
+                  <code>
+                    https://rasgen.vercel.app/api/badge?label=style&message=flat-square&color=blue&style=flat-square
+                  </code>
                 </div>
               </div>
             </div>
@@ -290,7 +335,9 @@ export default function Examples() {
               <div className={styles.exampleDetails}>
                 <h3 className={styles.exampleTitle}>For The Badge Style</h3>
                 <div className={styles.exampleCode}>
-                  <code>https://rasgen.vercel.app/api/badge?label=style&message=for-the-badge&color=blue&style=for-the-badge</code>
+                  <code>
+                    https://rasgen.vercel.app/api/badge?label=style&message=for-the-badge&color=blue&style=for-the-badge
+                  </code>
                 </div>
               </div>
             </div>

@@ -15,15 +15,19 @@ export default function Home() {
           priority
         />
         <nav className={styles.nav}>
-          <a href="/docs" className={styles.navLink}>Documentation</a>
-          <a href="/examples" className={styles.navLink}>Examples</a>
-          <a href="https://github.com/rastgame/rasgen" target="_blank" rel="noopener noreferrer" className={styles.navLink}>
-            <Image
-              src="/github-icon.svg"
-              alt="GitHub"
-              width={20}
-              height={20}
-            />
+          <a href="/docs" className={styles.navLink}>
+            Documentation
+          </a>
+          <a href="/examples" className={styles.navLink}>
+            Examples
+          </a>
+          <a
+            href="https://github.com/rastgame/rasgen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.navLink}
+          >
+            <Image src="/github-icon.svg" alt="GitHub" width={20} height={20} />
             GitHub
           </a>
         </nav>
@@ -31,11 +35,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.hero}>
-          <h1 className={styles.title}>Create beautiful badges for your projects</h1>
+          <h1 className={styles.title}>
+            Create beautiful badges for your projects
+          </h1>
           <p className={styles.subtitle}>
-            Rasgen is a simple service for generating badges for your GitHub repositories, documentation, and websites.
+            Rasgen is a simple service for generating badges for your GitHub
+            repositories, documentation, and websites.
           </p>
-          
+
           <div className={styles.badgePreview}>
             <Image
               src="/preview-badge.svg"
@@ -49,32 +56,38 @@ export default function Home() {
 
         <section className={styles.badgeGenerator}>
           <h2 className={styles.sectionTitle}>Generate your badge</h2>
-          
+
           <div className={styles.generatorForm}>
             <div className={styles.formGroup}>
-              <label htmlFor="label" className={styles.label}>Label</label>
-              <input 
-                type="text" 
-                id="label" 
-                className={styles.input} 
+              <label htmlFor="label" className={styles.label}>
+                Label
+              </label>
+              <input
+                type="text"
+                id="label"
+                className={styles.input}
                 placeholder="version"
                 defaultValue="version"
               />
             </div>
-            
+
             <div className={styles.formGroup}>
-              <label htmlFor="message" className={styles.label}>Message</label>
-              <input 
-                type="text" 
-                id="message" 
-                className={styles.input} 
+              <label htmlFor="message" className={styles.label}>
+                Message
+              </label>
+              <input
+                type="text"
+                id="message"
+                className={styles.input}
                 placeholder="v1.0.0"
                 defaultValue="v1.0.0"
               />
             </div>
-            
+
             <div className={styles.formGroup}>
-              <label htmlFor="color" className={styles.label}>Color</label>
+              <label htmlFor="color" className={styles.label}>
+                Color
+              </label>
               <select id="color" className={styles.select} defaultValue="blue">
                 <option value="blue">Blue</option>
                 <option value="green">Green</option>
@@ -89,9 +102,11 @@ export default function Home() {
                 <option value="informational">Informational</option>
               </select>
             </div>
-            
+
             <div className={styles.formGroup}>
-              <label htmlFor="style" className={styles.label}>Style</label>
+              <label htmlFor="style" className={styles.label}>
+                Style
+              </label>
               <select id="style" className={styles.select} defaultValue="flat">
                 <option value="flat">Flat</option>
                 <option value="flat-square">Flat Square</option>
@@ -101,11 +116,15 @@ export default function Home() {
               </select>
             </div>
           </div>
-          
+
           <div className={styles.badgeResult}>
             <h3 className={styles.resultTitle}>Your Badge</h3>
             <div className={styles.badgePreviewContainer}>
-              <Suspense fallback={<div className={styles.loading}>Loading preview...</div>}>
+              <Suspense
+                fallback={
+                  <div className={styles.loading}>Loading preview...</div>
+                }
+              >
                 <Image
                   src="/preview-badge.svg"
                   alt="Generated badge preview"
@@ -115,7 +134,7 @@ export default function Home() {
                 />
               </Suspense>
             </div>
-            
+
             <div className={styles.codeSnippets}>
               <div className={styles.snippet}>
                 <div className={styles.snippetHeader}>
@@ -133,7 +152,7 @@ export default function Home() {
                   ![version](https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue)
                 </code>
               </div>
-              
+
               <div className={styles.snippet}>
                 <div className={styles.snippetHeader}>
                   <h4 className={styles.snippetTitle}>HTML</h4>
@@ -147,10 +166,12 @@ export default function Home() {
                   </button>
                 </div>
                 <code className={styles.snippetCode}>
-                  &lt;img src="https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue" alt="version" /&gt;
+                  &lt;img
+                  src=&ldquo;https://rasgen.vercel.app/api/badge?label=version&message=v1.0.0&color=blue&rdquo;
+                  alt=&ldquo;version&rdquo; /&gt;
                 </code>
               </div>
-              
+
               <div className={styles.snippet}>
                 <div className={styles.snippetHeader}>
                   <h4 className={styles.snippetTitle}>URL</h4>
@@ -170,10 +191,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         <section className={styles.features}>
           <h2 className={styles.sectionTitle}>Features</h2>
-          
+
           <div className={styles.featureGrid}>
             <div className={styles.feature}>
               <div className={styles.featureIcon}>
@@ -189,7 +210,7 @@ export default function Home() {
                 Create badges with custom labels, messages, colors, and styles.
               </p>
             </div>
-            
+
             <div className={styles.feature}>
               <div className={styles.featureIcon}>
                 <Image
@@ -204,7 +225,7 @@ export default function Home() {
                 Easily integrate badges with your GitHub repositories.
               </p>
             </div>
-            
+
             <div className={styles.feature}>
               <div className={styles.featureIcon}>
                 <Image
@@ -225,22 +246,13 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.footerLinks}>
-          <a
-            href="/docs"
-            className={styles.footerLink}
-          >
+          <a href="/docs" className={styles.footerLink}>
             Documentation
           </a>
-          <a
-            href="/api"
-            className={styles.footerLink}
-          >
+          <a href="/api" className={styles.footerLink}>
             API
           </a>
-          <a
-            href="/examples"
-            className={styles.footerLink}
-          >
+          <a href="/examples" className={styles.footerLink}>
             Examples
           </a>
           <a
