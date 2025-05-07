@@ -91,7 +91,7 @@ export default function Docs() {
           <section id="api-reference" className={styles.section}>
             <h2 className={styles.sectionTitle}>API Reference</h2>
             <p>
-              Rasgen provides several API endpoints for generating different types of badges. Here's a detailed reference for each endpoint.
+              Rasgen provides several API endpoints for generating different types of badges. Here&apos;s a detailed reference for each endpoint.
             </p>
 
             <div id="badge-api" className={styles.subsection}>
@@ -130,7 +130,7 @@ export default function Docs() {
                     <tr>
                       <td>color</td>
                       <td>string</td>
-                      <td>The color of the right side of the badge (e.g., "blue", "green", "red")</td>
+                      <td>The color of the right side of the badge (e.g., &ldquo;blue&rdquo;, &ldquo;green&rdquo;, &ldquo;red&rdquo;)</td>
                       <td>No (default: "blue")</td>
                     </tr>
                     <tr>

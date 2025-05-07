@@ -6,7 +6,7 @@ import { makeBadge, ValidationError } from 'badge-maker';
 interface DialogData {
   Members?: number;
   Name?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 /**
@@ -21,7 +21,7 @@ interface MemberData {
     Name?: string;
     Id?: string;
   };
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 /**
@@ -70,7 +70,6 @@ export async function GET(request: Request) {
     // 1. Get total members count
     const dialogInfoUrl = `https://api.yurba.one/dialogs/${dialogId}`;
     let totalMembers = 0;
-    let dialogName = '';
     
     try {
       const dialogRes = await fetch(dialogInfoUrl, {
@@ -95,7 +94,6 @@ export async function GET(request: Request) {
       
       const dialogData: DialogData = await dialogRes.json();
       totalMembers = dialogData.Members || 0;
-      dialogName = dialogData.Name || '';
       
     } catch (error) {
       console.error('Error fetching dialog info:', error);

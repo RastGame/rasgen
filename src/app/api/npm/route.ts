@@ -17,7 +17,15 @@ interface NPMPackageData {
     type?: string;
     url?: string;
   };
-  [key: string]: any;
+  engines?: {
+    node?: string;
+    [key: string]: string | undefined;
+  };
+  dependencies?: Record<string, string>;
+  devDependencies?: Record<string, string>;
+  types?: string;
+  typings?: string;
+  [key: string]: unknown;
 }
 
 /**
