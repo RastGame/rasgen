@@ -3,19 +3,19 @@ import { NextResponse } from "next/server";
 /**
  * API Documentation endpoint
  *
- * This endpoint provides comprehensive documentation for the Rasgen Badge API,
+ * This endpoint provides comprehensive documentation for the Rasgen API,
  * including all available endpoints, their parameters, and usage examples.
  *
  * @returns {NextResponse} JSON response with API documentation
  */
 export async function GET() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_API_URL || "https://badgen.example.com";
+    process.env.NEXT_PUBLIC_API_URL || "https://rasgen.vercel.app";
 
   return NextResponse.json(
     {
       name: "Rasgen Badge API",
-      version: "1.1.0",
+      version: "1.1.0", 
       description:
         "API for generating SVG badges for GitHub repositories, NPM packages, and other services",
       baseUrl,
@@ -118,8 +118,8 @@ export async function GET() {
       ],
       usage: {
         markdown:
-          "![Badge Example](https://badgen.example.com/api/badge?label=example&message=badge)",
-        html: '<img src="https://badgen.example.com/api/badge?label=example&message=badge" alt="Badge Example">',
+          "![Badge Example](https://rasgen.vercel.app/api/badge?label=example&message=badge)",
+        html: '<img src="https://rasgen.vercel.app/api/badge?label=example&message=badge" alt="Badge Example">',
         shields: "Compatible with shields.io URL format",
       },
       rateLimit: {
