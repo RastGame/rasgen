@@ -10,7 +10,7 @@ import { NextResponse } from "next/server";
  */
 export async function GET() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_API_URL || "https://rasgen.vercel.app";
+    process.env.API_URL || "https://rasgen.vercel.app";
 
   return NextResponse.json(
     {
